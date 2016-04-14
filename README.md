@@ -1,6 +1,8 @@
 Sensors
 =======
 
+The following was the inspiration for this project.
+
 One of our darknet sensors receives over one hundred probes on port 0/UDP. To better understand what this traffic is and where it's coming from, I decided to add a sensor to see if I can find out more information. This is the approach I took. Minor tweaks will likely be necessary.
 
 I need a sensor that listens to UDP requests on port 0. So, what is port 0 all about anyway? The first placed I looked is /etc/services which references IANA for all port assignments. Port 0 is not listed in /etc/services. This is because port 0 TCP/UDP is reserved.
